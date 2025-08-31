@@ -1,0 +1,16 @@
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello, DevOps!"
+
+@app.route("/menu")
+def menu():
+    return render_template("menu.html")
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
+
+# hunk 단위로 스테이징 추가 -p
