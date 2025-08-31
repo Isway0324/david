@@ -14,3 +14,6 @@ def home():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080, debug=True)
+
+
+# python -O app.py  ->  __debug__ = False (최적화 모드)
